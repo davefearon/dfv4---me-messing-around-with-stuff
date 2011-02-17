@@ -1,0 +1,7 @@
+= davefearon.com v4
+
+The beginning of the next version is here!
+
+== Copyright
+
+Copyright (c) 2011 Dave Fearon
