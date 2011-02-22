@@ -1,0 +1,9 @@
+HTML5 Horizontal
+<a href="http://www.w3.org/html/logo/">
+<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-device-multimedia-performance-semantics-storage.png" width="293" height="64" alt="HTML5 Powered with CSS3 / Styling, Device Access, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage" title="HTML5 Powered with CSS3 / Styling, Device Access, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage">
+</a>
+
+HTML5 Vertical
+<a href="http://www.w3.org/html/logo/">
+<img src="http://www.w3.org/html/logo/badge/html5-badge-v-css3-device-multimedia-performance-semantics-storage.png" width="38" height="266" alt="HTML5 Powered with CSS3 / Styling, Device Access, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage" title="HTML5 Powered with CSS3 / Styling, Device Access, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage">
+</a>
