@@ -221,12 +221,77 @@ button {  width: auto; overflow: visible; }
 
 
  /* Primary Styles
-    Author: 
+    Author: Dave Fearon
  */
+html, body {
+	font-family:helvetica, ariel, sans-serif;
+	font-size:12px;
+	font-weight:100;
+	line-height:18px;
+	color:#000;
+}
 
+a {
+	color:#333333;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+	color:#333333;
+}
 
+header {
+	background:#222222 url('../images/bg.jpeg') repeat fixed 0 0;
+	border-bottom:5px solid #00aeff;
+	height:36px;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:9999;
+}
+header #logoname {
+	display:inline-block;
+	padding:5px 3px;
+}
+header .logo {
+	float:left;
+}
+header .name {
+	font-size:36px;
+	font-family:'Josefin Sans', helvetica, sans-serif;
+	font-weight:300;
+	color:#fff;
+	float:left;
+	margin:8px 0 0 5px;
+}
+header nav {
+	display:inline-block;
+	font-family:'Josefin Sane', helvetica, sans-serif;
+	font-weight:100;
+	font-size:18px;
+	float:right;
+}
+header nav ul {
 
+}
+header nav ul li {
+	float:left;
+	margin:0 5px;
+}
 
+.container {
+	width:1000px;
+	margin:0 auto;
+}
+
+#main {
+	width:100%;
+	height:100%;
+	display:block;
+	position:relative;
+	margin:50px auto 0 auto;
+}
 
 
 
