@@ -228,7 +228,11 @@ html, body {
 	font-size:12px;
 	font-weight:100;
 	line-height:18px;
-	color:#000;
+	color:#484848;
+	background:#00aeff;
+	-webkit-box-shadow: inset 1px 1px 500px #0053a0;
+	-moz-box-shadow: inset 1px 1px 500px #0053a0;
+	box-shadow: inset 1px 1px 500px #000000;
 }
 
 a {
@@ -240,15 +244,20 @@ a:hover {
 	color:#333333;
 }
 
+/*
+			hori vert blur color
+box-shadow: 0px 0px 1px #000000;
+*/
+
 header {
-	background:#222222 url('../images/bg.jpeg') repeat fixed 0 0;
-	border-bottom:5px solid #00aeff;
-	height:36px;
-	position:fixed;
-	top:0;
-	left:0;
+	background:#000000;
+	border-bottom:1px solid #484848;
+	height:100px;
+	position:relative;
 	width:100%;
-	z-index:9999;
+	-webkit-box-shadow: 1px 1px 5px #000000;
+	-moz-box-shadow: 1px 1px 5px #000000;
+	box-shadow: 1px 1px 5px #000000;
 }
 header #logoname {
 	display:inline-block;
@@ -290,9 +299,19 @@ header nav ul li {
 	height:100%;
 	display:block;
 	position:relative;
-	margin:50px auto 0 auto;
+	margin:0 auto;
+	padding:10px 0;
 }
 
+footer {
+	background:#000000;
+	border-top:1px solid #484848;
+	height:200px;
+	width:100%;
+	-webkit-box-shadow: 1px 1px 5px #000000;
+	-moz-box-shadow: 1px 1px 5px #000000;
+	box-shadow: 1px 1px 5px #000000;
+}
 
 
 
