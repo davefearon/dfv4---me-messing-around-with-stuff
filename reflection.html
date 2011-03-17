@@ -1,32 +1,15 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>:: Dave Fearon :: v4 ::</title>
-  <meta name="description" content="">
-  <meta name="author" content="Dave Fearon">
-
-  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <title>Reflections</title>
 <style>
 html, body {
 	-webkit-background-size: 10px 10px;
 	-moz-background-size: 10px 10px;
 	background-size: 10px 10px;
-	background-color:#181818;
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, transparent), color-stop(.5, rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .5))),-webkit-gradient(linear, 0 0, 100% 0, color-stop(.5, transparent), color-stop(.5, rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .5)));
-	background-image: -moz-linear-gradient(transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5)),-moz-linear-gradient(0deg, transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5));
-	background-image: -o-linear-gradient(transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5)),-o-linear-gradient(0deg, transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5));
-	background-image: linear-gradient(transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5)),linear-gradient(0deg, transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5));
+	background-color:#f2f2f2;
 }
 #main { position:relative; }
 .box { position:absolute; top:20px; left:50px; width:150px; height:150px; }
@@ -54,112 +37,6 @@ html, body {
 	left:300px;
 	-webkit-box-reflect: below 0px -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), color-stop(0.5, transparent), to(#000));
 }
-
-/*
-CSS3 FUN!
-*/
-p { position:absolute; top:20px; left:550px; }
-.starburst {
-	display:block;
-	width:100px;
-	height:100px;
-	background:#00aeff;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	rotation: -45deg;
-	position:relative;
-	text-align:center;
-	text-decoration:none;
-	color:#000;
-	margin:0;
-}
-.starburst span {
-	display:block;
-	text-align:center;
-	width:100px;
-	height:100px;
-	background:#00aeff;
-	-webkit-transform: rotate(-22.5deg);
-	-moz-transform: rotate(-22.5deg);
-	rotation: -22.5deg;
-	margin:0;
-}
-
-.starburst span small {
-	display:block;
-	position:absolute;
-	top:43px;
-	left:36px;
-	-webkit-transform: rotate(135deg);
-	-moz-transform: rotate(135deg);
-	rotation: 135deg;
-}
-
-#contact {
-	position:absolute; top:300px; left:0;
-	width: 430px; margin: 60px auto; padding: 60px 30px;
-	background: #c9d0de; border: 1px solid #e1e1e1;
-	-moz-box-shadow: 0px 0px 8px #444;
-	-webkit-box-shadow: 0px 0px 8px #444;
-}
-
-h1 {
-	font-size: 35px; color: #445668; text-transform: uppercase;
-	text-align: center; margin: 0 0 35px 0; text-shadow: 0px 1px 0px #f2f2f2;
-}
-
-label {
-	float: left; clear: left; margin: 11px 20px 0 0; width: 95px;
-	text-align: right; font-size: 16px; color: #445668;
-	text-transform: uppercase; text-shadow: 0px 1px 0px #f2f2f2;
-}
-
-input {
-	width: 260px; height: 35px; padding: 5px 20px 0px 20px; margin: 0 0 20px 0;
-	background: #5E768D;
-	background: -moz-linear-gradient(top, #546A7F 0%, #5E768D 20%); /* firefox */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#546A7F), color-stop(20%,#5E768D)); /* webkit */
-	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;
-	font-family: sans-serif; font-size: 16px; color: #f2f2f2; text-transform: uppercase; text-shadow: 0px -1px 0px #334f71;
-}
-	input::-webkit-input-placeholder  {
-    	color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;
-	}
-	input:-moz-placeholder {
-	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;
-	}
-
-textarea {
-	width: 260px; height: 170px; padding: 12px 20px 0px 20px; margin: 0 0 20px 0;
-	background: #5E768D;
-	background: -moz-linear-gradient(top, #546A7F 0%, #5E768D 20%); /* firefox */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#546A7F), color-stop(20%,#5E768D)); /* webkit */
-	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;
-	font-family: sans-serif; font-size: 16px; color: #f2f2f2; text-transform: uppercase; text-shadow: 0px -1px 0px #334f71;
-}
-	textarea::-webkit-input-placeholder  {
-    	color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;
-	}
-	textarea:-moz-placeholder {
-	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;
-	}
-
-input:focus, textarea:focus {
-	background: #728eaa;
-	background: -moz-linear-gradient(top, #668099 0%, #728eaa 20%); /* firefox */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#668099), color-stop(20%,#728eaa)); /* webkit */
-}
-
-input[type=submit] {
-	width: 185px; height: 52px; float: right; padding: 10px 15px; margin: 0 15px 0 0;
-	-moz-box-shadow: 0px 0px 5px #999;-webkit-box-shadow: 0px 0px 5px #999;
-	border: 1px solid #556f8c;
-	background: -moz-linear-gradient(top, #718DA9 0%, #415D79 100%); /* firefox */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#718DA9), color-stop(100%,#415D79)); /* webkit */
-	cursor: pointer;
-}
 </style>
 </head>
 <body>
@@ -169,35 +46,6 @@ input[type=submit] {
 			<div class="reflectedbox"></div>
 			<div class="box"></div>
 			<div class="box" id="specialbox"></div>
-
-			<p>
-				<a class="starburst" href="#">
-					<span>
-						<span>
-							<span>
-								<span>
-									<small>TEST</small>
-								</span>
-							</span>
-						</span>
-					</span>
-				</a>
-			</p>
-
-			<div id="contact">
-				<h1>Send an email</h1>
-				<form action="#" method="post">
-					<fieldset>
-						<label for="name">Name:</label>
-						<input type="text" id="name" placeholder="Enter your full name" />
-						<label for="email">Email:</label>
-						<input type="text" id="email" placeholder="Enter your email address" />
-						<label for="message">Message:</label>
-						<textarea id="message" placeholder="What do you say?"></textarea>
-						<input type="submit" value="Send Message" />
-					</fieldset>
-				</form>
-			</div>
 		</div>
   	</div> <!--! end of #container -->
 	<footer></footer>

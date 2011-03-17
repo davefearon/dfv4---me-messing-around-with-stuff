@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Reflections</title>
+<style>
+html, body {
+	-webkit-background-size: 10px 10px;
+	-moz-background-size: 10px 10px;
+	background-size: 10px 10px;
+	background-color:#181818;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, transparent), color-stop(.5, rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .5))),-webkit-gradient(linear, 0 0, 100% 0, color-stop(.5, transparent), color-stop(.5, rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .5)));
+	background-image: -moz-linear-gradient(transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5)),-moz-linear-gradient(0deg, transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5));
+	background-image: -o-linear-gradient(transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5)),-o-linear-gradient(0deg, transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5));
+	background-image: linear-gradient(transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5)),linear-gradient(0deg, transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5));
+}
+#main { position:relative; }
+
+p { position:absolute; top:20px; left:550px; }
+.starburst {
+	display:block;
+	width:100px;
+	height:100px;
+	background:#00aeff;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	rotation: -45deg;
+	position:relative;
+	text-align:center;
+	text-decoration:none;
+	color:#000;
+	margin:0;
+}
+.starburst span {
+	display:block;
+	text-align:center;
+	width:100px;
+	height:100px;
+	background:#00aeff;
+	-webkit-transform: rotate(-22.5deg);
+	-moz-transform: rotate(-22.5deg);
+	rotation: -22.5deg;
+	margin:0;
+}
+
+.starburst span small {
+	display:block;
+	position:absolute;
+	top:43px;
+	left:36px;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	rotation: 135deg;
+}
+</style>
+</head>
+<body>
+    <header></header>
+	<div class="container">
+		<div id="main">
+			<p>
+				<a class="starburst" href="#">
+					<span>
+						<span>
+							<span>
+								<span>
+									<small>TEST</small>
+								</span>
+							</span>
+						</span>
+					</span>
+				</a>
+			</p>
+		</div>
+  	</div> <!--! end of #container -->
+	<footer></footer>
+</body>
+</html>

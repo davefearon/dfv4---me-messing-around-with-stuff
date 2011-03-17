@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Forms</title>
+<style>
+html, body {
+	-webkit-background-size: 10px 10px;
+	-moz-background-size: 10px 10px;
+	background-size: 10px 10px;
+	background-color:#181818;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, transparent), color-stop(.5, rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .5))),-webkit-gradient(linear, 0 0, 100% 0, color-stop(.5, transparent), color-stop(.5, rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .5)));
+	background-image: -moz-linear-gradient(transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5)),-moz-linear-gradient(0deg, transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5));
+	background-image: -o-linear-gradient(transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5)),-o-linear-gradient(0deg, transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5));
+	background-image: linear-gradient(transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5)),linear-gradient(0deg, transparent 50%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5));
+}
+#main { position:relative; }
+
+#contact {
+	position:absolute; top:300px; left:0;
+	width: 430px; margin: 60px auto; padding: 60px 30px;
+	background: #c9d0de; border: 1px solid #e1e1e1;
+	-moz-box-shadow: 0px 0px 8px #444;
+	-webkit-box-shadow: 0px 0px 8px #444;
+}
+
+h1 {
+	font-size: 35px; color: #445668; text-transform: uppercase;
+	text-align: center; margin: 0 0 35px 0; text-shadow: 0px 1px 0px #f2f2f2;
+}
+
+label {
+	float: left; clear: left; margin: 11px 20px 0 0; width: 95px;
+	text-align: right; font-size: 16px; color: #445668;
+	text-transform: uppercase; text-shadow: 0px 1px 0px #f2f2f2;
+}
+
+input {
+	width: 260px; height: 35px; padding: 5px 20px 0px 20px; margin: 0 0 20px 0;
+	background: #5E768D;
+	background: -moz-linear-gradient(top, #546A7F 0%, #5E768D 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#546A7F), color-stop(20%,#5E768D)); /* webkit */
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;
+	font-family: sans-serif; font-size: 16px; color: #f2f2f2; text-transform: uppercase; text-shadow: 0px -1px 0px #334f71;
+}
+	input::-webkit-input-placeholder  {
+    	color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;
+	}
+	input:-moz-placeholder {
+	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;
+	}
+
+textarea {
+	width: 260px; height: 170px; padding: 12px 20px 0px 20px; margin: 0 0 20px 0;
+	background: #5E768D;
+	background: -moz-linear-gradient(top, #546A7F 0%, #5E768D 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#546A7F), color-stop(20%,#5E768D)); /* webkit */
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;
+	font-family: sans-serif; font-size: 16px; color: #f2f2f2; text-transform: uppercase; text-shadow: 0px -1px 0px #334f71;
+}
+	textarea::-webkit-input-placeholder  {
+    	color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;
+	}
+	textarea:-moz-placeholder {
+	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;
+	}
+
+input:focus, textarea:focus {
+	background: #728eaa;
+	background: -moz-linear-gradient(top, #668099 0%, #728eaa 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#668099), color-stop(20%,#728eaa)); /* webkit */
+}
+
+input[type=submit] {
+	width: 185px; height: 52px; float: right; padding: 10px 15px; margin: 0 15px 0 0;
+	-moz-box-shadow: 0px 0px 5px #999;-webkit-box-shadow: 0px 0px 5px #999;
+	border: 1px solid #556f8c;
+	background: -moz-linear-gradient(top, #718DA9 0%, #415D79 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#718DA9), color-stop(100%,#415D79)); /* webkit */
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div id="main">
+			<div id="contact">
+				<h1>Send an email</h1>
+				<form action="#" method="post">
+					<fieldset>
+						<label for="name">Name:</label>
+						<input type="text" id="name" placeholder="Enter your full name" />
+						<label for="email">Email:</label>
+						<input type="text" id="email" placeholder="Enter your email address" />
+						<label for="message">Message:</label>
+						<textarea id="message" placeholder="What do you say?"></textarea>
+						<input type="submit" value="Send Message" />
+					</fieldset>
+				</form>
+			</div>
+		</div>
+  	</div> <!--! end of #container -->
+</body>
+</html>
