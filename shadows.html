@@ -68,8 +68,12 @@ html, body {
 	position:absolute;
 	top:16px;
 	left:2px;
+	-webkit-box-shadow:0px 5px 10px rgba(0,0,0,1);
+	-moz-box-shadow:0px 5px 10px rgba(0,0,0,1);
 	box-shadow:0px 5px 10px rgba(0,0,0,1);
 	-webkit-transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+	transform:rotate(-10deg);
 }
 .tag2 .in {
 	width:100px;
@@ -78,9 +82,14 @@ html, body {
 	top:-12px;
 	left:-4px;
 	-webkit-transform:rotate(10deg);
+	-moz-transform:rotate(10deg);
+	transform:rotate(10deg);
+	-webkit-box-shadow:inset 30px 0px 40px rgba(0,0,0,0.3), inset 20px 0px 20px rgba(0,0,0,0.3), inset -30px 10px 40px rgba(255,255,255,0.4);
+	-moz-box-shadow:inset 30px 0px 40px rgba(0,0,0,0.3), inset 20px 0px 20px rgba(0,0,0,0.3), inset -30px 10px 40px rgba(255,255,255,0.4);
+	box-shadow:inset 30px 0px 40px rgba(0,0,0,0.3), inset 20px 0px 20px rgba(0,0,0,0.3), inset -30px 10px 40px rgba(255,255,255,0.4);
 }
 p { padding:5px 5px 5px 30px; width:250px; height:100px; background:#fff; position:relative; margin:0 auto; }
-.red { background:#f00; color:#000; }
+.red { background:#f00; color:#fff; }
 .blue { background:#00f; color:#fff; }
 .aqua { background:#00aeff; color:#fff; }
 </style>
