@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Pulltab</title>
+<style>
+html, body {
+	background:#eee;
+	font-size:11px;
+	font-family:helvetica, sans-serif;
+}
+
+.red { background:#f00; color:#fff; }
+.blue { background:#00f; color:#fff; }
+.aqua { background:#00aeff; color:#fff; }
+
+
+
+.pulltab {
+	position:relative;
+}
+.pulltab .behind {
+	width:200px;
+	height:30px;
+	background:#f2f2f2;
+	border:1px dashed #000;
+	-webkit-box-shadow:inset 2px 0 5px rgba(0,0,0,0.8), inset -5px 0 5px rgba(0,0,0,0.8);
+	-moz-box-shadow:inset 2px 0 5px rgba(0,0,0,0.8), inset -5px 0 5px rgba(0,0,0,0.8);
+	box-shadow:inset 2px 0 5px rgba(0,0,0,0.8), inset -5px 0 5px rgba(0,0,0,0.8);
+}
+.pulltab .behind div {
+	padding:7px 0 0 0;
+	color:#000;
+	font-size:14px;
+	text-transform:uppercase;
+	text-align:center;
+}
+.pulltab .tab {
+	position:absolute;
+	top:0px;
+	left:198px;
+	width:180px;
+	height:30px;
+}
+
+.pulltab .tab .out {
+	width:172px;
+	height:5px;
+	background:transparent;
+	position:absolute;
+	top:12px;
+	left:3px;
+	-webkit-box-shadow:0px 15px 10px rgba(0,0,0,1),0px 15px 10px rgba(0,0,0,1);
+	-moz-box-shadow:0px 15px 10px rgba(0,0,0,1),0px 15px 10px rgba(0,0,0,1);
+	box-shadow:0px 15px 10px rgba(0,0,0,1),0px 15px 10px rgba(0,0,0,1);
+	-webkit-transform:rotate(-2deg);
+	-moz-transform:rotate(-2deg);
+	transform:rotate(-2deg);
+}
+.pulltab .tab .in {
+	width:180px;
+	height:30px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	border-top:1px dashed #000;
+	border-right:1px dashed #000;
+	border-bottom:1px dashed #000;
+	-webkit-box-shadow:inset 30px 0px 40px rgba(0,0,0,0.3), inset 20px 0px 20px rgba(0,0,0,0.3), inset -30px 10px 40px rgba(255,255,255,0.4), 2px 5px 10px rgba(0,0,0,0.25);
+	-moz-box-shadow:inset 30px 0px 40px rgba(0,0,0,0.3), inset 20px 0px 20px rgba(0,0,0,0.3), inset -30px 10px 40px rgba(255,255,255,0.4), 2px 5px 10px rgba(0,0,0,0.25);
+	box-shadow:inset 30px 0px 40px rgba(0,0,0,0.3), inset 20px 0px 20px rgba(0,0,0,0.3), inset -30px 10px 40px rgba(255,255,255,0.4), 2px 5px 10px rgba(0,0,0,0.25);
+}
+
+</style>
+</head>
+<body>
+	<div class="pulltab">
+		<div class="behind">
+			<div>YOU WIN!</div>
+		</div>
+		<div class="tab">
+			<span class="out">
+			</span>
+			<span class="in red">
+			</span>
+		</div>
+	</div>
+</body>
+</html>
